@@ -14,5 +14,20 @@ namespace StockManagement_Lib
         public Decimal Quantity { get; set; } 
         public DateTime CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
+
+        public Stock(Guid guid,
+                     Guid productGuid, 
+                     Guid locationGuid, 
+                     decimal quantity, 
+                     DateTime createdDate, 
+                     DateTime? updatedDate)
+        {
+            this.Guid = guid;
+            this.ProductGuid = productGuid;
+            this.LocationGuid = locationGuid;
+            this.Quantity = quantity;
+            this.CreatedDate = createdDate;
+            this.UpdatedDate = updatedDate;
+        }
     }
 }

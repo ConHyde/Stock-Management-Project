@@ -20,5 +20,24 @@ namespace StockManagement_Lib
         public DateTime? UpdatedDate { get; set; }
         public bool IsAdmin { get; set; }
         public bool Inactive { get; set; }
+
+        public User(Guid guid,
+                    string iD,
+                    string firstName, 
+                    string lastName, 
+                    DateTime createdDate, 
+                    DateTime? updatedDate, 
+                    bool isAdmin, 
+                    bool inactive)
+        {
+            this.Guid = guid;
+            this.ID = iD;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.CreatedDate = createdDate;
+            this.UpdatedDate = updatedDate;
+            this.IsAdmin = isAdmin;
+            this.Inactive = inactive;
+        }
     }
 }

@@ -15,5 +15,19 @@ namespace StockManagement_Lib
         public DateTime CreatedDate { get; set; }
         public bool Inactive { get; set; }
 
+        public ProductCount(Guid guid,
+                            Guid productGuid,
+                            decimal quantity,
+                            Guid userGuid,
+                            DateTime createdDate,
+                            bool inactive)
+        {
+            this.Guid = guid;
+            this.ProductGuid = productGuid;
+            this.Quantity = quantity;
+            this.UserGuid = userGuid;
+            this.CreatedDate = createdDate;
+            this.Inactive = inactive;
+        }
     }
 }

@@ -23,5 +23,37 @@ namespace StockManagement_Lib
         public Decimal SalePrice { get; set; }
         public bool Inactive { get; set; }
 
+        public Product(Guid guid, 
+                       string iD,
+                       string name,
+                       string description,
+                       Guid? productGroup,
+                       DateTime createdDate,
+                       Guid createdByUserGuid,
+                       DateTime? updatedDate,
+                       Guid? updatedByUserGuid,
+                       DateTime? lastCounted,
+                       DateTime? lastCountedUserGuid,
+                       decimal lastCostPrice,
+                       decimal salePrice,
+                       bool inactive)
+        {
+            this.Guid = guid;
+            this.ID = iD;
+            this.Name = name;
+            this.Description = description;
+            this.ProductGroup = productGroup;
+            this.CreatedDate = createdDate;
+            this.CreatedByUserGuid = createdByUserGuid;
+            this.UpdatedDate = updatedDate;
+            this.UpdatedByUserGuid = updatedByUserGuid;
+            this.LastCounted = lastCounted;
+            this.LastCountedUserGuid = lastCountedUserGuid;
+            this.LastCostPrice = lastCostPrice;
+            this.SalePrice = salePrice;
+            this.Inactive = inactive;
+        }
+
+
     }
 }    
