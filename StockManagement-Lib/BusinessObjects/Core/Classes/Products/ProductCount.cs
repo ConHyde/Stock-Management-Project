@@ -13,21 +13,24 @@ namespace StockManagement_Lib
         public Decimal Quantity { get; set; }
         public Guid UserGuid { get; set; }
         public DateTime CreatedDate { get; set; }
-        public bool Inactive { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+        public bool Invalid { get; set; }
 
         public ProductCount(Guid guid,
                             Guid productGuid,
                             decimal quantity,
                             Guid userGuid,
                             DateTime createdDate,
-                            bool inactive)
+                            DateTime? updatedDate,
+                            bool invalid)
         {
             this.Guid = guid;
             this.ProductGuid = productGuid;
             this.Quantity = quantity;
             this.UserGuid = userGuid;
             this.CreatedDate = createdDate;
-            this.Inactive = inactive;
+            this.UpdatedDate = UpdatedDate;
+            this.Invalid = invalid;
         }
     }
 }
