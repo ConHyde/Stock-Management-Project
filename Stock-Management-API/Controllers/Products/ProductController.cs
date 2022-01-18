@@ -181,7 +181,7 @@ namespace Stock_Management_API.Controllers.Products
 
                 using (SqlConnection sqlConnection = new SqlConnection(sqlDataSource))
                 {
-                    string storedProcedure = "stp_Product_Get";
+                    string storedProcedure = "stp_Product_Save";
                     using (SqlCommand cmd = new SqlCommand(storedProcedure, sqlConnection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
