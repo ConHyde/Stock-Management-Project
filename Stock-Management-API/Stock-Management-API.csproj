@@ -16,4 +16,8 @@
     <ProjectReference Include="..\StockManagement-Lib\StockManagement-Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Photos\" />
+  </ItemGroup>
+
 </Project>
